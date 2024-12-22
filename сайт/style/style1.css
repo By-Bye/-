@@ -1,0 +1,361 @@
+body {
+	color: #000;
+}
+
+.nunito-sans-A {
+	font-family: 'Nunito Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100, 'YTLC' 500;
+}
+
+.nunito-sans-B {
+	font-family: 'Nunito Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100, 'YTLC' 500;
+}
+
+.logo-icon {
+	width: 330px;
+	height: 330px;
+	margin-bottom: 50px;
+}
+
+.logo-text {
+	font-size: 8rem;
+}
+
+.logo-text1 {
+	line-height: 1.5;
+}
+
+.white {
+	color: #fff;
+}
+
+.interval1 {
+	width: 20%;
+}
+
+.interval2 {
+	width: 20%;
+}
+
+.interval3 {
+	width: 50%;
+	margin-left: 40px;
+}
+
+.custom-btn {
+	background-color: #fff;
+	color: #000;
+	border: 2px solid #fff;
+	border-radius: 47px;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Эффект свечения */
+	margin-top: -40px;
+}
+
+.custom-btn {
+	width: 330px; /* Устанавливаем фиксированную ширину */
+	height: 60px; /* Устанавливаем фиксированную высоту */
+}
+
+.custom-btn1 {
+	width: 180px; /* Устанавливаем фиксированную ширину */
+	height: 60px; /* Устанавливаем фиксированную высоту */
+}
+
+.lole {
+	width: 50%;
+}
+
+/* 2 страница */
+
+.navbar {
+	background-color: #151514d2;
+	width: 104%;
+	margin-top: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+	position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::before {
+	content: '';
+	position: absolute;
+	bottom: -2px; /* Отступ от нижней границы ссылки */
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #fff; /* Цвет полоски */
+	transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+	width: 100%; /* При наведении полоска растягивается на всю ширину ссылки */
+}
+
+.navbar-nav .nav-item .nav-link.active::before {
+	width: 100%; /* Для активной ссылки полоска всегда отображается */
+}
+
+.navbar-nav .nav-item {
+	margin-right: 6rem; /* Увеличили отступ между элементами */
+}
+
+.logo-nav {
+	width: 52px; /* Размер иконки */
+	height: 52px;
+	margin-left: 30px;
+}
+
+.profile {
+	width: 40px; /* Размер иконки */
+	height: 40px;
+	margin-left: 30px; /* Отступ между текстом и иконкой */
+}
+
+.nav-item {
+	font-size: 20px;
+}
+
+/* пространство */
+
+.header {
+	background-color: #f8f9fa; /* Светло-серый фон */
+	padding: 1rem;
+}
+
+.btn {
+	border-radius: 0; /* Убираем закругленные углы у кнопок */
+}
+
+.img-svg {
+	width: 20px;
+	height: 20px;
+	margin-bottom: 4px;
+}
+
+form {
+	position: relative;
+	width: 280px;
+	margin: 0 auto;
+}
+input {
+	width: 100%;
+	height: 42px;
+	padding-left: 10px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	background: #f2f2f2;
+	color: #9e9c9c;
+}
+.search {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 42px;
+	height: 42px;
+	border: none;
+	background: #f2f2f2;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.btn svg {
+	margin-right: 5px;
+}
+
+.dropdown-toggle {
+	height: 42px;
+	padding-left: 50px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	background: #f2f2f2;
+	color: #000000;
+}
+
+.pelmeni {
+	background-color: #f2f2f2;
+	color: #000000;
+	border: none;
+	padding: 5px 16px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.text-right {
+	background-color: #f2f2f2;
+	color: #000000;
+	border: none;
+	padding: 5px 16px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+/* card */
+
+.card {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.imgbut {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /* Размещение элементов по вертикали */
+	align-items: flex-start; /* Выравнивание элементов по левому краю */
+	padding: 20px 20px 5px 12px; /* Отступы от края изображения */
+}
+
+.button-container button {
+	background-color: #fff;
+	color: #000;
+	border: none;
+	padding: 10px 25px;
+	border-radius: 5px;
+}
+
+.button-container {
+	display: flex;
+	gap: 60px; /* Отступ между кнопками */
+}
+
+.title {
+	color: #000000;
+	font-size: 14px;
+	background-color: #ffffffa6;
+	margin-left: 10px;
+	padding: 8px 30px 8px 30px;
+	border-radius: 28px;
+}
+
+.card-actions {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.img-card {
+	height: 166px;
+	width: 166px;
+}
+
+.card-text {
+	font-size: 14px;
+}
+
+/* Остальные стили */
+
+.time-btn {
+	background-color: #dce7e6;
+	border: none;
+	transition: background-color 0.3s, color 0.3s; /* Добавили плавную смену цвета текста */
+	color: #000;
+	flex-grow: 1; /* Кнопки займут всю доступную ширину */
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.selected {
+	background-color: #86aeaa;
+	color: #fff;
+}
+
+.time-btn:hover {
+	cursor: pointer;
+	background-color: #86aeaa;
+	color: #fff;
+}
+
+.time-btn.active {
+	background-color: #86aeaa;
+}
+
+.time-btn.disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.zabranirovat {
+	background-color: #43716b;
+	color: #fff;
+}
+
+.podrobnee {
+	background-color: #ffffff;
+	color: #000;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 2 блок */
+
+span {
+	background-color: #86aeaa;
+	color: #ffffff;
+	border: none;
+	padding: 5px 16px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.card-title {
+	color: #000;
+}
+
+.invitation-details {
+	margin-top: 20px;
+}
+
+.invitation-actions {
+	margin-top: 20px;
+}
+
+.podrobnee1 {
+	background-color: #43716b;
+	color: #fff;
+}
+
+.otclonit {
+	background-color: #ffffff;
+	color: #000;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	margin-left: 10px;
+}
+
+h4 {
+	margin-bottom: 20px;
+}
+
+.card-otstup {
+	margin-top: 20px;
+}
+
+.card-body-radius {
+	background-color: #f3f3f3;
+	border-radius: 20px;
+}
+
+.form-control {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
+}
